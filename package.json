@@ -1,0 +1,16 @@
+{
+  "name": "movie-tickets-server",
+  "version": "1.0.0",
+  "description": "a restful api server for movie tickets app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongodb"
+  ],
+  "author": "Haoran Zhu",
+  "license": "MIT"
+}
