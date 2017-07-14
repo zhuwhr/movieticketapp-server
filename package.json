@@ -11,6 +11,14 @@
     "express",
     "mongodb"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zhuwhr/movieticketapp-server.git"
+  },
   "author": "Haoran Zhu",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhuwhr/movieticketapp-server/issues"
+  },
+  "homepage": "https://github.com/zhuwhr/movieticketapp-server#readme"
 }
