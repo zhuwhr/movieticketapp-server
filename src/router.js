@@ -8,7 +8,8 @@ const router = Router();
 
 // Handle /movies.json route with index action from movies controller
 router.route('/movies/:movie_title')
-  .get(movieController.show);
+  .get(movieController.show)
+  .put(movieController.update);
 
 router.route('/movies')
   .get(movieController.list)

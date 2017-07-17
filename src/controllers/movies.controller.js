@@ -31,9 +31,14 @@ module.exports = {
     });
   },
 
-  //TODO: add put method
   update: (req, res) => {
-    
+    Movie.findOne({ title: req.params.movie_title }, (err, movie) => {
+      if (err) res.send(err);
+      Object.assign(movie, req.body).save((err1, movie1) => {
+        if (err1) res.send(err1);
+        res.json({ message: 'Movie updated!', movie1 });
+      });
+    });
   },
 
   //TODO: add remove method
