@@ -4,9 +4,7 @@ module.exports = {
   list: (req, res) => {
     // Find all movies and return json response
     Movie.find((err, movies) => {
-      if (err) {
-        res.send(err);
-      }
+      if (err) res.send(err);
       res.json(movies);
     });
   },
@@ -41,8 +39,9 @@ module.exports = {
     });
   },
 
-  //TODO: add remove method
   remove: (req, res) => {
-
-  }
+    Movie.remove({ title: req.params.movie_title }, (err, movie) => {
+      res.json({ message: 'Movie successfully deleted!', movie });
+    });
+  },
 };
