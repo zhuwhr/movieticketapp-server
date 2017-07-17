@@ -1,6 +1,6 @@
 import Movie from '../models/movie';
 
-module.exports = {
+export default {
   list: (req, res) => {
     // Find all movies and return json response
     Movie.find((err, movies) => {
@@ -39,7 +39,7 @@ module.exports = {
     });
   },
 
-  remove: (req, res) => {
+  delete: (req, res) => {
     Movie.remove({ title: req.params.movie_title }, (err, movie) => {
       res.json({ message: 'Movie successfully deleted!', movie });
     });

@@ -1,7 +1,5 @@
-import express, { Router } from 'express';
-// Import index action from movies controller
+import { Router } from 'express';
 import movieController from './controllers/movies.controller';
-import Movie from './models/movie';
 
 // Initialize the router
 const router = Router();
