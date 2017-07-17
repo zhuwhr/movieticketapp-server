@@ -95,10 +95,10 @@ const movies = [
 ];
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/movies');
+mongoose.connect('mongodb://localhost/testDB');
 
 // Go through each movie
-movies.map(data => {
+movies.map((data) => {
   // Initialize a model with movie data
   const movie = new Movie(data);
   // and save it into the database
